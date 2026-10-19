@@ -1,0 +1,49 @@
+{
+  "name": "GameScore",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string",
+      "description": "Player display name"
+    },
+    "score": {
+      "type": "number",
+      "description": "Total score achieved"
+    },
+    "level_reached": {
+      "type": "number",
+      "description": "Highest level completed"
+    },
+    "time_seconds": {
+      "type": "number",
+      "description": "Time to complete in seconds"
+    },
+    "crystals_collected": {
+      "type": "number",
+      "description": "Total energy crystals collected"
+    },
+    "relics_found": {
+      "type": "number",
+      "description": "Number of relics discovered"
+    },
+    "secrets_discovered": {
+      "type": "number",
+      "description": "Hidden areas found"
+    },
+    "enemies_defeated": {
+      "type": "number",
+      "description": "Total enemies defeated"
+    },
+    "abilities_unlocked": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of unlocked abilities"
+    }
+  },
+  "required": [
+    "player_name",
+    "score"
+  ]
+}
